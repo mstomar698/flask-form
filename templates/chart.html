@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkFlow Chart</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='../static/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="chart-box">
+      <h1>WorkFlow Chart</h1>
+      <div
+        class="chart mxgraph"
+        data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"xml":"&lt;mxfile host=\"app.diagrams.net\" modified=\"2023-01-20T01:12:50.608Z\" agent=\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\" etag=\"c0Zj0h6A02CH3L8pH-P8\" version=\"20.8.8\" type=\"device\"&gt;&lt;diagram id=\"C5RBs43oDa-KdzZeNtuy\" name=\"Page-1\"&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;","toolbar":"pages zoom layers lightbox","page":0}'
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://app.diagrams.net/js/viewer-static.min.js"
+      ></script>
+    </div>
+  </body>
+</html>

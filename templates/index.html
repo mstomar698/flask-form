@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='../static/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Home Page</h1>
+      <div class="video-box">
+        <!-- <iframe
+          width="420"
+          height="315"
+          title="video"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        >
+        </iframe> -->
+        <video width="320" height="240" controls>
+          <source
+            src="{{ url_for('static', filename='../static/video/demo.mp4') }}"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- <div class="image-box">
+        <img src="../static/image/demo.jpg" alt="img" />
+      </div> -->
+
+      <!-- Links to other pages -->
+      <div class="links">
+        <button class="form-btn" type="submit">
+          <a href="{{url_for('form')}}">Form</a>
+        </button>
+        <button class="chart-btn" type="submit">
+          <a href="{{url_for('chart')}}">WorkFLow Chart</a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
